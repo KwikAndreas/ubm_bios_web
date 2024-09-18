@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Inter", Helvetica;
+}
+
+section {
+  padding: 180px 0;
+}
+
+body {
+  color: black;
+  background: whitesmoke;
+  font-family: Helvetica;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Tree Layout */
+.tree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tree-row {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 20px 0;
+}
+
+.tree-node {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+/* Connecting lines */
+.tree-node::before,
+.tree-node::after {
+  content: "";
+  position: absolute;
+  border-top: 2px solid black;
+  width: 40px;
+  top: 50%;
+  left: -40px;
+  z-index: -1;
+}
+
+.tree-node:first-child::before {
+  display: none; /* No left line for the first node */
+}
+
+.tree-node::after {
+  content: "";
+  position: absolute;
+  border-left: 2px solid black;
+  height: 20px;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+}
+
+/* Vertical line between rows */
+.tree-row:first-child .tree-node::after {
+  display: none; /* No vertical line for the top row */
+}
+
+.tree-row + .tree-row .tree-node::before {
+  border-top: none; /* No horizontal line between rows */
+  border-left: 2px solid black;
+  height: 30px;
+  top: 0;
+  left: 50%;
+}
