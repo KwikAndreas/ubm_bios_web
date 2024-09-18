@@ -60,8 +60,8 @@ const Struktur: React.FC = () => {
               <div className="flex flex-col items-center bg-white p-4 rounded-md shadow-md">
                 <Image
                   src={`/images/${dosen.img}`}
-                  width={64}
-                  height={64}
+                  width={128}
+                  height={128}
                   alt={`Dosen Pembina ${index + 1}`}
                   className="object-cover mb-4"
                 />
@@ -87,8 +87,8 @@ const Struktur: React.FC = () => {
             <div className="flex flex-col items-center bg-white p-4 rounded-md shadow-md">
               <Image
                 src={"/public/static/bios.png"}
-                width={64}
-                height={64}
+                width={128}
+                height={128}
                 alt="Ketua"
                 className="object-cover mb-4"
               />
@@ -100,15 +100,10 @@ const Struktur: React.FC = () => {
           </div>
           <div className="relative">
             <div className="flex flex-col items-center bg-white p-4 rounded-md shadow-md">
-              <img
-                src="/images/wakil_ketua.jpg"
-                alt="Wakil Ketua"
-                className="w-56 h-56 object-cover mb-4"
-              />
               <Image
                 src={"/public/static/bios.png"}
-                width={64}
-                height={64}
+                width={128}
+                height={128}
                 alt="Wakil Ketua"
                 className="object-cover mb-4"
               />
@@ -129,8 +124,8 @@ const Struktur: React.FC = () => {
             <div className="flex flex-col items-center bg-white p-4 rounded-md shadow-md">
               <Image
                 src={"/public/static/bios.png"}
-                width={64}
-                height={64}
+                width={128}
+                height={128}
                 alt="Bendahara"
                 className="object-cover mb-4"
               />
@@ -142,8 +137,8 @@ const Struktur: React.FC = () => {
             <div className="flex flex-col items-center bg-white p-4 rounded-md shadow-md">
               <Image
                 src={"/public/static/bios.png"}
-                width={64}
-                height={64}
+                width={128}
+                height={128}
                 alt="Sekretaris"
                 className="object-cover mb-4"
               />
@@ -189,7 +184,13 @@ const Struktur: React.FC = () => {
           {ketuaDivisi.map((divisi, divisiIndex) => (
             <div key={divisiIndex} className="relative">
               <div className="flex flex-col items-center bg-white p-4 rounded-md shadow-md">
-                <Image src={`/images/${divisi.img}`} width={64} height={64} alt={`Ketua Divisi ${divisiIndex + 1}`} className="object-cover mb-4"/>
+                <Image
+                  src={`/images/${divisi.img}`}
+                  width={128}
+                  height={128}
+                  alt={`Ketua Divisi ${divisiIndex + 1}`}
+                  className="object-cover mb-4"
+                />
                 <h3 className="text-lg font-semibold text-primary">
                   {divisi.name}
                 </h3>
@@ -206,7 +207,13 @@ const Struktur: React.FC = () => {
               {anggotaPND.map((anggota, index) => (
                 <div key={index} className="relative mb-4">
                   <div className="flex flex-col items-center bg-white p-4 rounded-md shadow-md">
-                    <Image src={`/images/${anggota.img}`} width={64} height={64} alt={`Anggota Divisi ${divisiIndex + 1}`} className="object-cover mb-4"/>
+                    <Image
+                      src={`/images/${anggota.img}`}
+                      width={128}
+                      height={128}
+                      alt={`Anggota Divisi ${divisiIndex + 1}`}
+                      className="object-cover mb-4"
+                    />
                     <h3 className="text-lg font-semibold text-primary">
                       {anggota.name}
                     </h3>
