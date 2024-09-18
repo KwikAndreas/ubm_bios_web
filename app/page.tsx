@@ -4,6 +4,7 @@ import Visimisi from "./components/Visimisi";
 import Navbar from "./components/Navbar";
 import Struktur from "./components/Struktur";
 import Divisi from "./components/Divisi";
+import Contact from "./components/Contact";
 
 export default function Home() {
   return (
@@ -12,9 +13,9 @@ export default function Home() {
       <main>
         <Profile/>
         <Visimisi/>
-        <Struktur/>
         <Divisi/>
-        {/* <IconGroup/> */}
+        <Struktur/>
+        <Contact/>
       </main>
     </div>
   );

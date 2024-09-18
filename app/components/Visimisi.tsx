@@ -1,51 +1,45 @@
-import React from "react";
-
-const Visimisi = () => {
+const VisiMisi: React.FC = () => {
   return (
-    <section id="visimisi" className="min-h-screen p-6 transition duration-500">
-      <div className="container mx-auto text-center mt-4 select-none w-full justify-start">
-        <div className="flex flex-col md:flex-row gap-4 p-4 align-top">
-          <div className="flex flex-col justify-start items-center text-center w-full md:w-6/12">
-            <h3 className="text-4xl select-none font-bold mb-2 text-gray-900">
-              Visi
-            </h3>
-            <div className="w-full md:w-10/12">
-              <p className="text-left">
-                Menjadikan BIOS sebagai wadah yang memfasilitasi pengembangan
-                keterampilan teknis, inovasi, dan kolaborasi bagi mahasiswa/i
-                program studi Informatika, guna menciptakan lulusan yang unggul,
-                berdaya saing, dan mampu berkontribusi dalam menghadapi
-                tantangan kemajuan teknologi global.
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col justify-start items-center text-center w-full md:w-6/12">
-            <h3 className="text-4xl select-none font-bold mb-2 text-gray-900">
-              Misi
-            </h3>
-            <div className="w-full md:w-10/12">
-              <p className="text-left mb-1">
-                1. Menyelenggarakan kegiatan yang mampu meningkatkan wawasan,
-                keterampilan, dan potensi mahasiswa/i di bidang Informatika.
-              </p>
-              <p className="text-left mb-1">
-                2. Mengadakan kompetisi, acara teknologi, dan kunjungan industri
-                untuk memberikan pengalaman langsung di dunia kerja.
-              </p>
-              <p className="text-left mb-1">
-                3. Menyediakan platform kolaborasi dan klub pemrograman untuk
-                mendukung keterlibatan dan pengembangan keterampilan mahasiswa.
-              </p>
-              <p className="text-left mb-1">
-                4. Melaksanakan program pengabdian masyarakat berbasis
-                teknologi informasi.
-              </p>
-            </div>
-          </div>
+    <section
+      id="visimisi"
+      className="min-h-screen bg-gray-100 p-8 flex flex-col items-center justify-center"
+    >
+      <h2 className="text-4xl font-bold text-primary mb-8">Visi & Misi</h2>
+      <div className="grid grid-rows-1 md:grid-row-2 gap-8">
+        <div className="bg-white p-8 shadow-md rounded-md h-40">
+          <h3 className="text-2xl font-semibold text-secondary">Visi</h3>
+          <p>
+            Menjadikan BIOS sebagai wadah yang memfasilitasi pengembangan
+            keterampilan teknis, inovasi, dan kolaborasi bagi mahasiswa/i
+            program studi Informatika, guna menciptakan lulusan yang unggul,
+            berdaya saing, dan mampu berkontribusi dalam menghadapi tantangan
+            kemajuan teknologi global.
+          </p>
+        </div>
+        <div className="bg-white p-8 shadow-md rounded-md">
+          <h3 className="text-2xl font-semibold text-secondary">Misi</h3>
+          <ul className="list-disc pl-4 text-lg">
+            <li>
+              Menyelenggarakan kegiatan yang mampu meningkatkan wawasan,
+              keterampilan, dan potensi mahasiswa/i di bidang Informatika.
+            </li>
+            <li>
+              Mengadakan kompetisi, acara teknologi, dan kunjungan industri
+              untuk memberikan pengalaman langsung di dunia kerja.
+            </li>
+            <li>
+              Menyediakan platform kolaborasi dan klub pemrograman untuk
+              mendukung keterlibatan dan pengembangan keterampilan mahasiswa.
+            </li>
+            <li>
+              Melaksanakan program pengabdian masyarakat berbasis
+              teknologi informasi.
+            </li>
+          </ul>
         </div>
       </div>
     </section>
   );
 };
 
-export default Visimisi;
+export default VisiMisi;
