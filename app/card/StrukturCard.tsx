@@ -1,9 +1,10 @@
 import React from "react";
+import Image, { StaticImageData } from "next/image";
 
 interface StrukturCardProps {
   position: string;
   name: string;
-  photo: string;
+  photo: string | StaticImageData;
   isDosen: boolean;
 }
 
@@ -40,10 +41,12 @@ const StrukturCard: React.FC<StrukturCardProps> = ({
       </div>
 
       <div className="px-4 py-4 items-center text-center justify-between">
-        <img
+        <Image
           src={photo}
           alt={name}
-          className="w-16 h-16 mx-auto mb-2 object-cover"
+          width={128}
+          height={128}
+          className="mx-auto mb-2 object-cover"
         />
         <p className="font-medium text-wrap">{name}</p>
       </div>
