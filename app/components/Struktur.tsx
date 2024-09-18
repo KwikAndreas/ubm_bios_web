@@ -1,19 +1,6 @@
 // StrukturSection.tsx
 import React from "react";
 import StrukturCard from "../card/StrukturCard";
-//Dosen pembina
-import Pembina1 from "../public/static/logo_ubm.png";
-import Pembina2 from "../public/static/logo_ubm.png";
-import Pembina3 from "../public/static/logo_ubm.png";
-import Pembina4 from "../public/static/logo_ubm.png";
-
-//Ketua & Wakil
-import Ketua from "../public/static/logo_ubm.png";
-import Wakil from "../public/static/logo_ubm.png";
-
-//Pengurus
-import Bendahara from "../public/static/logo_ubm.png";
-import Sekretaris from "../public/static/logo_ubm.png";
 
 const Struktur: React.FC = () => {
   return (
@@ -23,26 +10,26 @@ const Struktur: React.FC = () => {
           <StrukturCard
             position="Dosen Pembina"
             name="Agustinus Fritz Wijaya, S.Kom, M.Cs."
-            photo={Pembina1}
+            photo=""
             isDosen={true}
           />
           <StrukturCard
             position="Dosen Pembina"
             name="Dr. Fransiskus Adikara, S.Kom, M.M"
-            photo={Pembina2}
+            photo=""
             isDosen={true}
           />
 
           <StrukturCard
             position="Dosen Pembina"
             name="Jusia Amanda Ginting, S.Kom, M.Kom"
-            photo={Pembina3}
+            photo=""
             isDosen={true}
           />
           <StrukturCard
             position="Dosen Pembina"
             name="Teady Matius Surya Mulyana, S.Kom, M.Kom"
-            photo={Pembina4}
+            photo=""
             isDosen={true}
           />
         </div>
@@ -51,13 +38,13 @@ const Struktur: React.FC = () => {
           <StrukturCard
             position="Ketua"
             name="Fricilia Angelica"
-            photo={Ketua}
+            photo=""
             isDosen={false}
           />
           <StrukturCard
             position="Wakil Ketua"
             name="Vinzenne Fernando Karim"
-            photo={Wakil}
+            photo=""
             isDosen={false}
           />
         </div>
@@ -66,19 +53,19 @@ const Struktur: React.FC = () => {
           <StrukturCard
             position="Sekretaris"
             name="Pheremya Margaretha"
-            photo={Sekretaris}
+            photo=""
             isDosen={false}
           />
           <StrukturCard
             position="Bendahara"
             name="Jonathan"
-            photo={Bendahara}
+            photo=""
             isDosen={false}
           />
           <StrukturCard
             position="Publikasi"
             name="Christiano Gracia Levi"
-            photo={Pembina1}
+            photo=""
             isDosen={false}
           />
         </div>
@@ -87,25 +74,25 @@ const Struktur: React.FC = () => {
           <StrukturCard
             position="Ketua Divisi Acara"
             name="Nici Andreas"
-            photo={Pembina1}
+            photo=""
             isDosen={false}
           />
           <StrukturCard
             position="Ketua Divisi Publikasi & Dokumentasi"
             name="Nico Andreas"
-            photo={Pembina1}
+            photo=""
             isDosen={false}
           />
           <StrukturCard
             position="Ketua Divisi Development & Project"
             name="Christopher Haris"
-            photo={Pembina1}
+            photo=""
             isDosen={false}
           />
           <StrukturCard
             position="Ketua Divisi Development & Project 2"
             name="Kwik Andreas Jonathan"
-            photo={Pembina1}
+            photo=""
             isDosen={false}
           />
         </div>
