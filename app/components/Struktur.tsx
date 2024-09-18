@@ -1,3 +1,6 @@
+import React from "react";
+import Image from "next/image";
+
 const Struktur: React.FC = () => {
   const dosenPembina = [
     {
@@ -55,10 +58,12 @@ const Struktur: React.FC = () => {
           {dosenPembina.map((dosen, index) => (
             <div key={index} className="relative">
               <div className="flex flex-col items-center bg-white p-4 rounded-md shadow-md">
-                <img
+                <Image
                   src={`/images/${dosen.img}`}
+                  width={64}
+                  height={64}
                   alt={`Dosen Pembina ${index + 1}`}
-                  className="w-56 h-56 object-cover mb-4"
+                  className="object-cover mb-4"
                 />
                 <h3 className="text-lg font-semibold text-primary">
                   {dosen.name}
@@ -80,10 +85,12 @@ const Struktur: React.FC = () => {
         <div className="flex justify-center space-x-8 relative mt-8">
           <div className="relative">
             <div className="flex flex-col items-center bg-white p-4 rounded-md shadow-md">
-              <img
-                src="/images/ketua.jpg"
+              <Image
+                src={"/public/static/bios.png"}
+                width={64}
+                height={64}
                 alt="Ketua"
-                className="w-56 h-56 object-cover mb-4"
+                className="object-cover mb-4"
               />
               <h3 className="text-lg font-semibold text-primary">
                 Fricilia Angelica
@@ -97,6 +104,13 @@ const Struktur: React.FC = () => {
                 src="/images/wakil_ketua.jpg"
                 alt="Wakil Ketua"
                 className="w-56 h-56 object-cover mb-4"
+              />
+              <Image
+                src={"/public/static/bios.png"}
+                width={64}
+                height={64}
+                alt="Wakil Ketua"
+                className="object-cover mb-4"
               />
               <h3 className="text-lg font-semibold text-primary">
                 Vinzenne Fernando Karim
@@ -113,10 +127,12 @@ const Struktur: React.FC = () => {
         <div className="flex justify-center space-x-8 relative mt-8">
           <div className="relative">
             <div className="flex flex-col items-center bg-white p-4 rounded-md shadow-md">
-              <img
-                src="/images/sekretaris.jpg"
-                alt="Sekretaris"
-                className="w-56 h-56 object-cover mb-4"
+              <Image
+                src={"/public/static/bios.png"}
+                width={64}
+                height={64}
+                alt="Bendahara"
+                className="object-cover mb-4"
               />
               <h3 className="text-lg font-semibold text-primary">Jonathan</h3>
               <p className="text-sm text-gray-500">Sekretaris</p>
@@ -124,15 +140,17 @@ const Struktur: React.FC = () => {
           </div>
           <div className="relative">
             <div className="flex flex-col items-center bg-white p-4 rounded-md shadow-md">
-              <img
-                src="/images/bendahara.jpg"
-                alt="Bendahara"
-                className="w-56 h-56 object-cover mb-4"
+              <Image
+                src={"/public/static/bios.png"}
+                width={64}
+                height={64}
+                alt="Sekretaris"
+                className="object-cover mb-4"
               />
               <h3 className="text-lg font-semibold text-primary">
                 Pheremya Margaretha
               </h3>
-              <p className="text-sm text-gray-500">Bendahara</p>
+              <p className="text-sm text-gray-500">Sekretaris</p>
             </div>
           </div>
           {/* <div className="relative">
@@ -171,11 +189,7 @@ const Struktur: React.FC = () => {
           {ketuaDivisi.map((divisi, divisiIndex) => (
             <div key={divisiIndex} className="relative">
               <div className="flex flex-col items-center bg-white p-4 rounded-md shadow-md">
-                <img
-                  src={`/images/${divisi.img}`}
-                  alt={`Ketua Divisi ${divisiIndex + 1}`}
-                  className="w-56 h-56 object-cover mb-4"
-                />
+                <Image src={`/images/${divisi.img}`} width={64} height={64} alt={`Ketua Divisi ${divisiIndex + 1}`} className="object-cover mb-4"/>
                 <h3 className="text-lg font-semibold text-primary">
                   {divisi.name}
                 </h3>
@@ -192,11 +206,7 @@ const Struktur: React.FC = () => {
               {anggotaPND.map((anggota, index) => (
                 <div key={index} className="relative mb-4">
                   <div className="flex flex-col items-center bg-white p-4 rounded-md shadow-md">
-                    <img
-                      src={`/images/${anggota.img}`}
-                      alt={`Anggota Divisi ${divisiIndex + 1} ${index + 1}`}
-                      className="w-56 h-56 object-cover mb-4"
-                    />
+                    <Image src={`/images/${anggota.img}`} width={64} height={64} alt={`Anggota Divisi ${divisiIndex + 1}`} className="object-cover mb-4"/>
                     <h3 className="text-lg font-semibold text-primary">
                       {anggota.name}
                     </h3>
