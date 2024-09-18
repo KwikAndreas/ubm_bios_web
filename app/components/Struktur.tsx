@@ -78,7 +78,7 @@ const Struktur: React.FC = () => {
           <StrukturCard
             position="Publikasi"
             name="Christiano Gracia Levi"
-            photo=""
+            photo={Pembina1}
             isDosen={false}
           />
         </div>
@@ -87,25 +87,25 @@ const Struktur: React.FC = () => {
           <StrukturCard
             position="Ketua Divisi Acara"
             name="Nici Andreas"
-            photo=""
+            photo={Pembina1}
             isDosen={false}
           />
           <StrukturCard
             position="Ketua Divisi Publikasi & Dokumentasi"
             name="Nico Andreas"
-            photo=""
+            photo={Pembina1}
             isDosen={false}
           />
           <StrukturCard
             position="Ketua Divisi Development & Project"
             name="Christopher Haris"
-            photo=""
+            photo={Pembina1}
             isDosen={false}
           />
           <StrukturCard
             position="Ketua Divisi Development & Project 2"
             name="Kwik Andreas Jonathan"
-            photo=""
+            photo={Pembina1}
             isDosen={false}
           />
         </div>
