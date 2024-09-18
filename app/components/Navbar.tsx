@@ -24,28 +24,28 @@ const Navbar = () => {
           <a
             href="#Profile"
             onClick={(e) => handleLinkClick(e, "#profile")}
-            className="text-white hover:text-orange-300 transition-colors duration-300 font-semibold"
+            className="text-white hover:text-orange-300 transition-colors duration-300 font-semibold select-none"
           >
             Profile
           </a>
           <a
             href="#visimisi"
             onClick={(e) => handleLinkClick(e, "#visimisi")}
-            className="text-white hover:text-orange-300 transition-colors duration-300 font-semibold"
+            className="text-white hover:text-orange-300 transition-colors duration-300 font-semibold select-none"
           >
             Visi Misi
           </a>
           <a
             href="#struktur"
             onClick={(e) => handleLinkClick(e, "#struktur")}
-            className="text-white  hover:text-orange-300 transition-colors duration-300 font-semibold"
+            className="text-white  hover:text-orange-300 transition-colors duration-300 font-semibold select-none"
           >
             Struktur
           </a>
           <a
             href="#divisi"
             onClick={(e) => handleLinkClick(e, "#divisi")}
-            className="text-white  hover:text-orange-300 transition-colors duration-300 font-semibold"
+            className="text-white  hover:text-orange-300 transition-colors duration-300 font-semibold select-none"
           >
             Divisi
           </a>
